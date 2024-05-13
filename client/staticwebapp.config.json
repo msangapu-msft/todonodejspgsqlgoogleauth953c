@@ -31,12 +31,14 @@
       "redirect": "/.auth/logout"
     }
   ],
-  "auth": {
+"auth": {
     "rolesSource": "/api/getroles",
     "identityProviders": {
       "google": {
-        "clientIdSettingName": "GOOGLE_CLIENT_ID",
-        "clientSecretSettingName": "GOOGLE_CLIENT_SECRET"
+        "registration": {
+          "clientIdSettingName": "GOOGLE_CLIENT_ID",
+          "clientSecretSettingName": "GOOGLE_CLIENT_SECRET"
+        }
       }
     }
   }
